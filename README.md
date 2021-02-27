@@ -1,24 +1,41 @@
-<b> Below are the steps to run mediawiki container where docker is required.</b>
+# MediaWiki Dockerfile
 
-Please clone this repositry from below URL
-`git clone https://github.com/himanshusangal3/mediawiki_docker.git`
+###Clone this repositry from below URL
+```
+$ git clone https://github.com/himanshusangal3/mediawiki_docker.git`
+```
 
-Then go into the directory
-`cd mediawiki_docker/`
+###Then go into the directory
+```
+$ cd mariadb_docker/
+```
 
-Run below command to build the image
-`docker build -t mediawiki:1.0 .`
+### Build the image
 
-Check docker image created with  command
-`docker images`
+To create the image `mediawiki`, execute the following command on the `docker-mariadb` folder:
+
+```
+$ docker build -t mediawiki:1.0 .
+```
 
 
-Run the below command to run the container of mediawiki
-`docker run --name mediawiki -p 80:8080 -d mediawiki:1.0`
+### Check the created docker images
+```
+$ docker images
+```
+### Run the image
 
-Check the running container with  command
-`docker ps`
+To run the image and bind to host port 3306:
 
-Now MediaWiki Website is up.
-`Access with the URL http://ec2-54-87-56-167.compute-1.amazonaws.com/`
+```
+$ docker run --name mediawiki -p 80:8080 -d mediawiki:1.
+```
+
+###Check the running container with  command
+```
+docker ps
+```
+
+###Now MediaWiki Website is up.
+`Access with the URL http://<server-name>/`
 
