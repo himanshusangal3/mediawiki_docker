@@ -1,4 +1,4 @@
-Below are the steps to run mediawiki container where docker is required.
+<b> Below are the steps to run mediawiki container where docker is required.</b>
 
 Please clone this repositry from below URL
 `git clone https://github.com/himanshusangal3/mediawiki_docker.git`
@@ -9,14 +9,14 @@ Then go into the directory
 Run below command to build the image
 `docker build -t mediawiki:1.0 .`
 
-Check docker image created with below command
+Check docker image created with  command
 `docker images`
 
 
 Run the below command to run the container of mediawiki
 `docker run --name mediawiki -p 80:8080 -d mediawiki:1.0`
 
-Check the running container with below command
+Check the running container with  command
 `docker ps`
 
 Now MediaWiki Website is up.
